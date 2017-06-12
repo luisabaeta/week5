@@ -22,6 +22,13 @@ function convertCtoF() {
 	var outputF;
 	var outputF = inputC * 1.8 + 32;
 	document.getElementById("solutionCtoF").innerHTML = outputF + " &deg;F";
+
+	if (inputC > 28) {
+	document.getElementById("icons").innerHTML = '<img src="images/melted_popsicle.png">';}
+	if (inputC > 23 && inputC < 29) {
+	document.getElementById("icons").innerHTML = '<img src="images/popsicle.png">';}
+	if (inputC < 18) {
+	document.getElementById("icons").innerHTML = '<img src="images/tea.png">';}
 }
 
 document.getElementById("convertCtoF").onclick = convertCtoF;
