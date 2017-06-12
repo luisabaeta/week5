@@ -4,18 +4,25 @@
     <title>Temperature Converter</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Mogra|Scope+One" rel="stylesheet">
   </head>
 
   <body>
+      <h1>Temperature converter</h1>
+
+  <div id="box">
     <div class="row">
-      <input type="number" id="inputFtoC"> &deg;F = <span id="solutionFtoC">__&deg;C</span><br>
+      <input type="text" id="inputFtoC"> &deg;F = <span id="solutionFtoC">__&deg;C</span><br>
       <button id="convertFtoC">Convert</button>
     </div>
 
     <div class="row">
-      <input type="number" id="inputCtoF"> &deg;C = <span id="solutionCtoF">__&deg;F</span><br>
+      <input type="text" id="inputCtoF"> &deg;C = <span id="solutionCtoF">__&deg;F</span><br>
       <button id="convertCtoF">Convert</button>
     </div>
+  </div>
+
+  <div id="icons"> </div>
 
     <script type="text/javascript" src="js/project.js"></script>
   </body>
